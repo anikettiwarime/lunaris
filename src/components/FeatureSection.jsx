@@ -35,10 +35,10 @@ const data = [
 const FeatureSection = () => {
   return (
     <div>
-      <h2 className="text-white text-center text-[28px] font-medium mt-6 pb-5">
+      <h2 className="mf mt-6 pb-5 text-center text-[28px] font-medium text-white md:text-[50px] md:leading-[60px]">
         Other Features
       </h2>
-      <div className="flex flex-col items-center justify-center gap-12">
+      <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:flex-wrap md:gap-24">
         {data.map(({ id, title, description }) => (
           <FeatureCard key={id} title={title} description={description} />
         ))}
